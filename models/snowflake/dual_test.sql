@@ -1,1 +1,8 @@
-select * from dual
+{{
+    config(
+        materialized="table"
+
+    )
+}}
+
+SELECT * FROM {{ref("employee")}}

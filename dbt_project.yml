@@ -40,3 +40,18 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+
+name: 'my_project'  # Your dbt project name
+version: '1.0.0'
+
+config-version: 2
+
+profile: 'default'  # Ensure this matches your profiles.yml
+
+models:
+  my_project:
+    raw:
+      +database: KCART_DBT_RAW
+      +schema: RAW
+      +materialized: table  # Optional: default materialization
+

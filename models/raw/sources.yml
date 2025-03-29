@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: SNOWFLAKE_SAMPLE_DATA_NAME  # Logical name for DBT reference (case-sensitive)
+    database: SNOWFLAKE_SAMPLE_DATA  # Explicitly set the database
+    schema: TPCH_SF10  # Schema where your raw tables exist
+    tables:
+      - name: CUSTOMER
+        description: "Customer data from the main application."
+
+      - name: ORDERS
+        description: "Orders data from the main application."
+
+      - name: NATION
+        description: "Orders data from the main application."

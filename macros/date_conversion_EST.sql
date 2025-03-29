@@ -1,4 +1,4 @@
-{%- macro utc_to_est_conversion1(timestamp=none) -%}
+{%- macro utc_to_est_conversion(timestamp=none) -%}
 
 {%- if timestamp is none -%}
 convert_timezone('UTC', 'America/New_York', sysdate())

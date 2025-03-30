@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+    - name: lineitem_raw
+      description: "lineitem_raw table constraints check"
+      columns:
+          - name: L_LINENUMBER
+            description: "Not null key for this table"
+            tests:
+                - not_null

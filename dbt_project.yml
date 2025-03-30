@@ -55,3 +55,8 @@ models:
       +schema: RAW
       +materialized: table  # Optional: default materialization
 
+    analyze:
+      +database: KCART_DBT_ANALYZE
+      +schema: ANALYZE
+      +materialized: table  # Optional: default materialization
+

@@ -12,4 +12,7 @@ sources:
         description: "Orders data from the main application."
 
       - name: NATION
-        description: "Orders data from the main application."
+        description: "Nation the customer"
+
+      - name: LINEITEM
+        description: "Lineitems data from the main application."

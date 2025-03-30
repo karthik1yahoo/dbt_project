@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: CUSTOMER_RAW
+      description: "Customer table constraints check"
+      columns:
+          - name: c_custkey
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
